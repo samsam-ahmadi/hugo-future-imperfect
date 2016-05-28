@@ -1,0 +1,14 @@
+{{ partial "header" . }}
+    {{ $.Scratch.Set "shareNav" true }}
+    {{ partial "navbar" . }}
+    {{ partial "share-menu" . }}
+
+    {{ partial "sidebar" . }}
+    <!-- Main -->
+    <div id="main">
+        <!-- Post -->
+        {{ $.Scratch.Set "h1" true }}
+        {{ .Render "content-single" }}
+    </div>
+    
+{{ partial "footer" . }}

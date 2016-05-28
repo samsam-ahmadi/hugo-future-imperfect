@@ -1,0 +1,317 @@
+/*@font-face {
+	font-family: 'Vazir';
+	src: url('../fonts/Vazir.woff') format('woff');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Vazir';
+	src: url('../fonts/Vazir-Bold.woff') format('woff');
+	font-weight: bold;
+}
+*/
+/*=============================
+=            fonts            =
+=============================*/
+/*
+a, abbr, acronym, address, applet, article, aside, audio, b, big,
+blockquote, body, canvas, caption, center, cite, code, dd, del,
+details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure,
+footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe,
+img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output,
+p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub,
+summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul,
+var, video{
+	font-family: 'Vazir', 'pfont', 'Ubuntu';
+}*/
+
+body{
+	background-color: #fcfcfc;
+}
+.post{
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+#back-to-top{
+	color: unset;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+#back-to-top :hover,
+#back-to-top:hover::before{
+	color:#000 !important;
+}
+
+/*===============================
+=            sidebar            =
+===============================*/
+
+#footer .copyright, #menu .links > li a p{
+
+	letter-spacing: 0px;
+	font-size: 0.9em;
+}
+
+#sidebar{
+	direction: rtl;
+	margin-left: 3em;
+	margin-right: 0em;
+}
+
+#intro .logo {
+	width: 5em;
+}
+
+#intro .logo::before{
+	background-image:none;
+}
+
+/*=====  End of sidebar  ======*/
+
+
+/*============================
+=            post            =
+============================*/
+
+ul li,ul li a h3,ul li a p {
+	text-align: right;
+	direction: rtl;
+}
+
+ul li a{
+	text-align: left;
+	direction: ltr;
+}
+
+.post > footer .stats li, .post > header .meta{
+
+	border-right: 1px solid rgba(160, 160, 160, 0.3);
+	border-left: 0px;
+}
+
+.author, h1, h2, h3, h4, h5, h6{
+	letter-spacing: 0em;
+}
+
+.post > footer .stats{
+	direction: rtl;
+}
+
+.post > footer .stats li{
+	margin-right: 2em;
+}
+
+.post > header {
+	direction: rtl;
+}
+
+.author{
+	justify-content: inherit;
+}
+
+article.post h2, article.post h3, article.post h4, article.post p{
+	direction: rtl;
+}
+
+.actions li .button:hover{
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+	/*border: 0px;*/
+	color:#000 !important;
+	transition: all 0.2s ease 0s !important;
+	-o-transition: all 0.2s ease 0s !important;
+	-webkit-transition: all 0.2s ease 0s !important;
+	-moz-transition: all 0.2s ease 0s !important;
+}
+
+.button, button, input[type="submit"], input[type="reset"], input[type="button"]{
+	box-shadow: inherit ;
+	-o-box-shadow: inherit ;
+	-moz-box-shadow: inherit ;
+	-webkit-box-shadow: inherit ;
+	letter-spacing: 0px;
+	border: 0.5px solid #F5f5f5;
+	font-size: 0.8em;
+	font-family: "Vazir";
+	font-weight: 400;
+}
+
+.post > footer .stats li, header p{
+	letter-spacing: 0px;
+}
+
+/*=====  End of post  ======*/
+
+
+/*============================
+=            menu            =
+============================*/
+
+#header .main .search input{
+	color:#F4F4F4;
+}
+
+#input_color{
+	color:#000;
+}
+
+#menu .links{
+	direction: rtl;
+}
+
+#header{
+	background-color: #056571;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+#header h2,#header h1 a{
+	color: #FFF;
+	font-weight: 800;
+}
+
+#header .links a{
+	color: #FFF ;
+	opacity: 1;
+}
+#header .links ul li a{
+	letter-spacing: 0px;
+	font-family: "Vazir";
+	font-size: 0.8em;
+	font-weight:800;
+}
+
+p a {
+	color: #263238;
+}
+
+#header .links ul li a:hover,
+#header .links ul li a:hover::before{
+	color: #FFF !important;
+	opacity:1 !important;
+}
+
+#header .main ul li > a::before{
+	color: #FFF;
+}
+
+input[type="email"], input[type="tel"], input[type="text"], input[type="password"], select, textarea{
+	text-align: right;
+	background: transparent;
+}
+
+/*=====  End of menu  ======*/
+
+
+/*===================================
+=            single post            =
+===================================*/
+
+#social-share{
+	direction: rtl;
+}
+
+/*=====  End of single post  ======*/
+
+
+@media (max-width: 48em) {
+
+
+	#sidebar{
+		margin-left: 0px;
+	}
+
+	#wrapper{
+		display: flex;
+		flex-direction: column-reverse;	
+	}
+}
+
+/*==================================
+=            categories            =
+==================================*/
+
+#wrapper #main h1 {
+	text-align: right;
+}
+
+/*==================================
+=            Muut            =
+==================================*/
+.m-focused .m-postinput, .m-replyform .m-preview .m-post{
+	direction: rtl;
+}
+.m-focused .m-postinput{
+	border-color: transparent !important;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+	transition: all 0.2s ease 0s !important;
+	-o-transition: all 0.2s ease 0s !important;
+	-webkit-transition: all 0.2s ease 0s !important;
+	-moz-transition: all 0.2s ease 0s !important;
+}
+
+
+.m-page{
+	padding: 1.4em 0 0 0 !important;
+}
+
+.m-post-upload em {
+	color: #7E7E7E !important;
+	margin: .2em !important;
+}
+.m-show-help{
+	
+	color: #7E7E7E !important;
+}
+
+.m-postinput {
+	border-color: 0.5px solid #f5f5f5;
+	color: #2d2d2d;
+}
+
+.moot button {
+	background-color: #fff !important;
+	color: #3c3b3b !important;
+}
+
+.m-postinput, .m-focused .m-postinput {
+	padding-right: 30px !important;
+}
+
+#moot-logo {
+	padding: 0 !important;
+}
+
+.is-commenting .m-like, #moot-logo a {
+	display: none !important;
+}
+
+.is-commenting .m-replyform {
+	margin-top: -2em !important;
+	margin-bottom: -6.2em;
+	}
+
+.m-preview .m-preview-title {
+	   margin: auto !important;
+}
+
+.m-controls button {
+	border-radius: 0px !important;
+	background-color: #fff !important;
+	border:0.5px solid #f5f5f5 !important;
+}
+
+.m-button:hover, .moot button:hover{
+	background-color: #fff !important;
+	background-image:none !important;
+	box-shadow:  0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+/*=====  End of Muut  ======*/
+
+
+/*==================================
+=            EXTRA ELEMENTS            =
+==================================*/
+/* Use '<ltr>something_here</ltr>' where you need to show something from left side to right */
+ltr {
+	direction: ltr;
+}

@@ -1,7 +1,7 @@
 baseurl = "http://hugo.spf13.com/"
 languageCode = "en-us"
 title = "Hugo Future Imperfect"
-theme = "hugo-future-imperfect"
+theme = "hugo-future-imperfect-rtl"
 preserveTaxonomyNames = true
 paginate = 3
 disqusShortname = "shortname"
